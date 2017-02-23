@@ -35,3 +35,7 @@ $(document).on('click', '#add-to-favorite', function() {
     $('#color').focus();
   }
 });
+
+$(document).on('mouseenter', '#colors .item', function() {
+  setPreviewColor($(this).css('background-color'));
+});
