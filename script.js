@@ -32,5 +32,6 @@ $(document).on('click', '#add-to-favorite', function() {
   } else {
     addBox($('#color').val());
     $('#color').val('');
+    $('#color').focus();
   }
 });
