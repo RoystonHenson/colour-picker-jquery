@@ -26,6 +26,11 @@ $(document).on('keyup', '#color', function() {
 });
 
 $(document).on('click', '#add-to-favorite', function() {
-  addBox($('#color').val());
-  $('#color').val('');
+  colorList = $('#colors .item');
+  if(colorList.length >= 16) {
+    colorList.last().remove();
+  } else {
+    addBox($('#color').val());
+    $('#color').val('');
+  }
 });
