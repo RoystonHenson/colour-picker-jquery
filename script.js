@@ -36,6 +36,13 @@ $(document).on('click', '#add-to-favorite', function() {
   }
 });
 
+var previewColor;
+
 $(document).on('mouseenter', '#colors .item', function() {
+  previewColor = $('#preview').css('background-color');
   setPreviewColor($(this).css('background-color'));
+});
+
+$(document).on('mouseleave', '#colors .item', function() {
+  setPreviewColor(previewColor);  
 });
