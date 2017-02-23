@@ -14,6 +14,8 @@ $(document).ready(function() {
                 'rgb(255, 69 ,0)', 'rgb(128,128,128)', 'rgb(138,43,226)',
                 'rgb(205,133,63)', 'rgb(255,105,180)', 'rgb(75,0,130)',
                 'rgb(127,255,212)'];
+  var randomColor = colors[Math.floor(Math.random() * colors.length)];
+  setPreviewColor(randomColor);
   colors.forEach(function(color) {
     addBox(color);
   });
