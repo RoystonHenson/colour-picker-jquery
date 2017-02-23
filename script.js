@@ -1,1 +1,3 @@
-/* Exercise 2: Color picker */
+function setPreviewColour(colour) {
+  $('#preview').css('background-color', colour);
+}

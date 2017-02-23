@@ -79,7 +79,7 @@ input[type='text']:before {
   padding-right: 10px;
 }
 
-.preview {
+#preview {
   height: 400px;
   width: 400px;
   padding: 20px;
