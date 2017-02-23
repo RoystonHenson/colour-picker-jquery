@@ -13,4 +13,5 @@ $(document).on('keyup', '#color', function() {
 
 $(document).on('click', '#add-to-favorite', function() {
   addBox($('#color').val());
+  $('#color').val('');
 });
